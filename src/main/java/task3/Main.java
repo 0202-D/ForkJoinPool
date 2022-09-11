@@ -19,7 +19,6 @@ public class Main {
         long time2 = System.currentTimeMillis();
         System.out.println("Сумма элементов массива - "+forkJoinPool.invoke(counter));
         System.out.println("Время выполнения в многопоточной среде - "+(System.currentTimeMillis()-time2)+"mls");
-        // Казалось , что в многопоточной среде будет быстрее , но нет ...
     }
     public static int [] generate(){
         int [] array = new int [1000];
